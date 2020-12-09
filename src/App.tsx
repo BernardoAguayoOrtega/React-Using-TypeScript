@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       {tuple[1]}
-      <Message />
+      <Message message="this is a simple message" />
     </div>
   );
 }

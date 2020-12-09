@@ -1,7 +1,7 @@
 import React from "react";
 
-const Message = () => {
-  return <p>Htis is a quick message</p>;
+const Message = (props: {message: string}): any => {
+return <p>{props.message}</p>;
 };
 
 export default Message;
