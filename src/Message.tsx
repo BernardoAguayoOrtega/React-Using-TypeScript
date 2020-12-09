@@ -1,7 +1,12 @@
 import React from "react";
 
-const Message = (props: {message: string}): any => {
-return <p>{props.message}</p>;
+interface UserMessage {
+  name?: string;
+  message: string;
+}
+
+const Message: React.FC<UserMessage> = ({ message }): any => {
+  return <p>{message}</p>;
 };
 
 export default Message;
